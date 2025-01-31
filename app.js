@@ -1,21 +1,16 @@
 const fs = require("fs");
 let data = fs.readFileSync("data.json")
 data = JSON.parse(data);
-
 let customers = data.customers;
 let shirts = data.shirts;
 let table = [];
 let totalOrdersProcessed = 0;
 let totalProfitProcessed = 0;
-
 for(customer of customers){
     let i = 0;
     let subtotal = 0
     console.log()
     console.log(customer.name)
-    // table.push({
-    //     "Customer": customer.name
-    // })
     for(shirt of shirts){
         if (customer.order[i] > 0){
             let quantity = customer.order[i]
@@ -32,15 +27,12 @@ for(customer of customers){
             "Profit Per Item": parseFloat(profitPerItem.toFixed(2)),
             "Total Item Profit": parseFloat(totalItemProfit.toFixed(2)),
             "Total Item Price": parseFloat(totalItemPrice.toFixed(2))
-
             })
             subtotal += totalItemPrice
             totalProfitProcessed += totalItemProfit
-
         }
         i += 1                                 
     }
-    
     totalOrdersProcessed += 1;
     console.table(table);
     console.log("Subtotal: $" + parseFloat(subtotal.toFixed(2)))
@@ -55,5 +47,3 @@ for(customer of customers){
 console.log()
 console.log("Total Orders Processed: " + totalOrdersProcessed)
 console.log("Total Profit Processed: $" + totalProfitProcessed)
-
- 
