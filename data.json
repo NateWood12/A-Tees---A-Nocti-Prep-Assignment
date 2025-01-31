@@ -1,0 +1,57 @@
+{
+    "shirts": [
+        {
+            "name": "I love it when a plan comes together!",
+            "price": 17.99,
+            "cost" : 7.99
+        },
+        {
+            "name": "Shut up, fool.",
+            "price": 15.99,
+            "cost" : 4.99
+        },
+        {
+            "name": "I ain't flying Hannibal!",
+            "price": 12.99,
+            "cost" : 5.99
+        },
+        {
+            "name": "Let's not get technical",
+            "price": 14.99,
+            "cost" : 5.99
+        },
+        {
+            "name": "Looks like we're going to crash.",
+            "price": 16.99,
+            "cost" : 6.99
+        }
+    ],
+
+    "customers": [
+        {
+            "name": "Dwight Schultz",
+            "order": [0,0,2,1,2],
+            "shipping": 11.97
+        },
+        {
+            "name": "John Ashley",
+            "order": [3,0,1,0,1],
+            "shipping": 13.85
+        },
+        {
+            "name": "Lance LeGault",
+            "order": [3,5,0,1,0],
+            "shipping": 0
+        },
+        {
+            "name": "Marla Heasley",
+            "order": [4,0,0,3,0],
+            "shipping": 9.97
+        },
+        {
+            "name": "Tawny Moyer",
+            "order": [0,5,1,1,2],
+            "shipping": 0
+        }
+    ]
+}
